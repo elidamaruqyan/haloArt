@@ -1,0 +1,44 @@
+/*!********* Header Are Start ***************!*/
+.header-list {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-list__item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-color-ltr);
+    font-family: 'inglobal', sans-serif;
+    font-weight: bold;
+}
+
+.header-list__item img, svg {
+    max-width: 35px;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 7px;
+    fill: var(--primary-color-ltr);
+}
+
+.header-list__item--active a, svg {
+    color: var(--secondary-brand-color);
+    fill: var(--secondary-brand-color);
+    transition: 800ms;
+}
+
+.header-list__item:hover .header-list__item a, svg {
+    color: var(--secondary-brand-color);
+    fill: var(--secondary-brand-color);
+}
+
+.header-toggle-btn {
+    display: none;
+}
+
+/*!********* Header Are End ***************!*/
+
+
