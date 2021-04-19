@@ -25,12 +25,12 @@
     display: flex;
     align-items: center;
     margin: 10px 0;
-    transition: 800ms;
+    transition: var(--duration800);
 }
 
 .footer-list__item i {
     color: var(--primary-color-lt);
-    transition: 800ms;
+    transition: var(--duration800);
     margin-right: 15px;
 }
 
@@ -38,7 +38,7 @@
     color: var(--primary-color-lt);
     font-size: var(--type-smaller);
     font-weight: var(--type-medium);
-    transition: 800ms;
+    transition: var(--duration800);
 }
 
 .footer-list__item:hover i,

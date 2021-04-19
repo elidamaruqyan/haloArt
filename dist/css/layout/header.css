@@ -12,8 +12,8 @@
   align-items: center;
   color: var(--primary-color-ltr);
   font-family: 'inglobal', sans-serif;
-  font-size: 16pt;
-  font-weight: bold;
+  font-size: 1.2vw;
+  font-weight: var(--type-bold);
 }
 
 .header-list__item img, svg {
@@ -28,7 +28,7 @@
 .header-list__item--active a, svg {
   color: var(--secondary-brand-color);
   fill: var(--secondary-brand-color);
-  transition: 800ms;
+  transition: var(--duration800);
 }
 
 .header-list__item:hover .header-list__item a, svg {

@@ -6,7 +6,6 @@ const browsersync = require("browser-sync").create();
 const cp = require("child_process");
 const cssnano = require("cssnano");
 const del = require("del");
-const eslint = require("gulp-eslint");
 const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
@@ -45,7 +44,6 @@ function images() {
         .pipe(
             imagemin([
                 imagemin.gifsicle({ interlaced: true }),
-                imagemin.jpegtran({ progressive: true }),
                 imagemin.optipng({ optimizationLevel: 5 }),
                 imagemin.svgo({
                     plugins: [

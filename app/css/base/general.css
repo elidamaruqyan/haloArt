@@ -16,15 +16,14 @@
 
     /**************** Gap and Duration Variables **********************/
     --vmargin: 150px;
-    --duration: 3s;
+    --margin-center: 0 auto;
+    --duration: 600ms;
+    --duration800: 0.8s;
 
     /****************** Z-Index Variables ******************/
     --zIndex-1: 9;
     --zIndex-2: 99;
     --zIndex-3: 999;
-    --zIndex-4: 9999;
-    --zIndex-5: 99999;
-
     /************ Typography Variables ******************/
 
     --type-micro: 0.625rem; /* 10px */
@@ -38,12 +37,8 @@
     --type-largest: 4.375rem; /* 70px */
     --type-jumbo: 5.625; /* 90px */
 
-    --type-light: 300;
     --type-regular: 400;
-    --type-medium: 500;
-    --type-semi-bold: 600;
     --type-bold: 700;
-    --type-extra-bold: 900;
 }
 
 
@@ -94,7 +89,7 @@ img {
 
 .container {
     width: 982px;
-    margin: 0 auto;
+    margin: var(--margin-center)
 }
 
 .grid-container {
@@ -110,7 +105,7 @@ img {
     grid-area: footer;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,3 +115,10 @@ img {
     flex: 1;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}

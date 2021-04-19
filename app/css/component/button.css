@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     font-size: var(--type-small);
-    font-weight: var(--type-semi-bold);
+    font-weight: var(--type-bold);
     text-transform: uppercase;
     background-color: transparent;
     color: var(--clr-ntrl-min);
@@ -20,7 +20,7 @@
     display: block;
     width: 30%;
     height: 100%;
-    transition: 600ms;
+    transition: var(--duration);
 }
 
 .btn::before{
@@ -40,5 +40,5 @@
 .btn:hover::after,
 .btn:hover::before{
     width: 100%;
-    transition: 600ms;
+    transition: var(--duration);
 }

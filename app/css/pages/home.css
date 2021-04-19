@@ -7,21 +7,21 @@
 }
 
 .hero-content-text {
-    z-index: 99;
+    z-index: var(--zIndex-2);
     position: relative;
     padding: 160px 76px 0;
     text-align: center;
     transform: rotate(352deg);
-    margin: 0 auto;
+    margin: var(--margin-center);
 }
 
 .hero-content__title {
-    font: italic bold 35pt 'inglobal';
+    font: italic var(--type-bold) 2.3vw 'inglobal';
     padding-bottom: 0;
     -webkit-text-stroke: 4px black;
     -webkit-text-fill-color: white;
     max-width: 600px;
-    margin: 0 auto;
+    margin: var(--margin-center);
 }
 
 .hero-content-img {
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     padding: 111px 0 90px;
-    margin: 0 auto;
+    margin: var(--margin-center)
 }
 
 .question_box--bg {
@@ -52,8 +52,8 @@
 
 .question_box--bg h5 {
     max-width: 130px;
-    margin: 0 auto;
-    font: italic bold 30pt 'inglobal';
+    margin: var(--margin-center);
+    font: italic var(--type-bold) 2vw 'inglobal';
     text-align: center;
     white-space: pre-wrap;
     transform: rotate(30deg);
@@ -75,7 +75,7 @@
 }
 
 .scroll-down--text {
-    font: italic bold 18pt 'inglobal';
+    font: italic var(--type-bold) 1.25vw 'inglobal';
     color: var(--secondary-brand-color);
     max-width: 110px;
     display: inline-block;
@@ -124,13 +124,13 @@
 }
 
 .about-us-info h2 {
-    font: italic bold 34pt 'inglobal';
+    font: italic var(--type-bold) 2.3vw 'inglobal';
     color: var(--main-brand-color);
 }
 
 .about-us-info p {
     margin-top: 25px;
-    font: normal 16pt 'Open sans';
+    font: var(--type-regular) 1.1vw 'Open sans';
     color: #282828;
 }
 
@@ -200,7 +200,7 @@
 
 .our-partners__title {
     padding-bottom: 60px;
-    font: italic bold 30pt 'inglobal';
+    font: italic var(--type-bold) 2vw 'inglobal';
     background: -webkit-linear-gradient(#96520f, #c89f67);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -228,19 +228,19 @@
     position: absolute;
     top: -128px;
     left: 98px;
-    z-index: 999;
+    z-index: var(--zIndex-3)
 }
 
 .our-partner--gazprom {
     right: 14%;
     top: -148px;
-    z-index: 999;
+    z-index: var(--zIndex-3);
 }
 
 .our-partner--ikea {
     left: 24%;
     top: -31px;
-    z-index: 9;
+    z-index: var(--zIndex-1);
 }
 
 .our-partner--ikea .logo-wrapper {
@@ -250,13 +250,13 @@
 .our-partner--jungheinrich {
     left: 1%;
     top: -11px;
-    z-index: 9;
+    z-index: var(--zIndex-1);
 }
 
 .our-partner--vamed {
     right: 30%;
     top: -39px;
-    z-index: 9;
+    z-index: var(--zIndex-1);
 }
 
 .our-partner--strabag {
@@ -305,7 +305,7 @@
 }
 
 .submit-request--form-info h5 {
-    font: italic bold 24pt 'inglobal';
+    font: italic var(--type-bold) 1.6vw 'inglobal';
     color: #1c1d1d;
     margin-bottom: 30px;
 }
@@ -317,8 +317,28 @@
 /*!***************** Section Our Partners End  **********************!*/
 
 /*!***************** Section What Is It Start  **********************!*/
+.section-container {
+    display: flex;
+}
 
-.what-is-it .scroll-down{
+.what-is-it .scroll-down {
     margin-bottom: 196px;
 }
+
+.box {
+    width: auto;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    margin: var(--margin-center);
+    background: url("../../assets/images/phone-number-bg.png") no-repeat center;
+    background-size: contain;
+}
+
+.phone {
+    width: auto;
+}
+
 /*!***************** Section What Is It End  **********************!*/
