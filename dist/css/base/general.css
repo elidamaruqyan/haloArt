@@ -124,3 +124,8 @@ img {
 .text-right {
   text-align: right;
 }
+
+.wave {
+  display: flex;
+  margin-bottom: 30px;
+}

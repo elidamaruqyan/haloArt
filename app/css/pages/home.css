@@ -146,6 +146,17 @@
     position: relative;
 }
 
+.form-information {
+    font: normal var(--type-bold) 1vw 'Open Sans';
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-information span {
+    font: normal var(--type-regular) 0.9vw 'Open Sans';
+    display: block;
+}
+
 .form-image {
     position: relative;
     z-index: -1;
@@ -174,6 +185,11 @@
     height: auto;
     margin-left: 74px;
     margin-top: -19px;
+}
+
+.phone-number-info {
+    color: var(--main-brand-color);
+    font: var(--type-bold) 1.6vw 'Open Sans'
 }
 
 /*!********* Send Message Are End ***************!*/
@@ -314,6 +330,11 @@
     margin: 24px auto;
 }
 
+.submit-request--form-info, .submit-request--main-form {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
 /*!***************** Section Our Partners End  **********************!*/
 
 /*!***************** Section What Is It Start  **********************!*/
@@ -335,10 +356,42 @@
     margin: var(--margin-center);
     background: url("../../assets/images/phone-number-bg.png") no-repeat center;
     background-size: contain;
+    color: white;
+    margin-bottom: 110px;
 }
 
 .phone {
     width: auto;
+}
+
+.center-item {
+    flex: 1;
+    max-width: 36%;
+    margin-top: 220px;
+    text-align: center;
+}
+
+.what-is-it__title h2 {
+    font: italic var(--type-bold) 2.4vw 'inglobal';
+}
+
+.what-is-it__title p {
+    font: normal var(--type-regular) 1.09vw 'Open Sans';
+    color: #282828;
+    margin: 20px 0;
+}
+
+.what-is-it__title ul p {
+    margin: 0;
+    font: normal var(--type-bold) 0.95vw 'Open Sans';
+}
+
+.blue-color {
+    color: var(--main-brand-color);
+}
+
+.red-color {
+    color: var(--secondary-brand-color);
 }
 
 /*!***************** Section What Is It End  **********************!*/
